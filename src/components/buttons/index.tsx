@@ -7,11 +7,11 @@ interface ButtonProps extends TouchableOpacityProps {
 	title: string;
 }
 
-export const Button = ({ priority='primary', title, ...rest }: ButtonProps) => {
+export const Button = ({ priority = 'primary', title, ...rest }: ButtonProps) => {
 	return <TouchableOpacity
 		{...rest}
 		style={priority === 'primary' ? styles.button : styles.button2}
 	>
-		<Text style={styles.buttonText}>{ title }</Text>
+		<Text style={styles.buttonText}>{title}</Text>
 	</TouchableOpacity>
 }

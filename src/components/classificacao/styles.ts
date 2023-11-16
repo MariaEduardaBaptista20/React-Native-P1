@@ -29,8 +29,6 @@ export const styles = StyleSheet.create({
         flexWrap: 'wrap',
         gap: 6,
         margin: 5,
-        justifyContent: 'space-around',
-        alignItems: 'flex-end'
 
 
     },
