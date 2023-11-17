@@ -11,11 +11,11 @@ import { AntDesign, MaterialCommunityIcons, FontAwesome5, Ionicons } from '@expo
 const Tab = createBottomTabNavigator<RootTabParamList>();
 
 export type RootTabParamList = {
-	EmCartaz: {};
+	Filmes: {};
 	Login: {};
 	Destaque: {};
 	Cinema: {};
-	Noticias: {};
+	Notícias: {};
 }
 
 export function BottomTabRoutes() {
@@ -34,7 +34,7 @@ export function BottomTabRoutes() {
 						<MaterialCommunityIcons name="movie-open-outline" size={24} color={color} />
 					)
 				}}
-				name="EmCartaz"
+				name="Filmes"
 				component={EmCartaz}
 			/>
 			<Tab.Screen
@@ -73,7 +73,7 @@ export function BottomTabRoutes() {
 						<FontAwesome5 name="newspaper" size={24} color={color} />
 					)
 				}}
-				name="Noticias"
+				name="Notícias"
 				component={Noticias}
 			/>
 
